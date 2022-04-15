@@ -1,0 +1,55 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    
+        "configurations": [
+            {
+                "command": "swift run",
+                "name": "run swift",
+                "request": "launch",
+                "type": "node-terminal"
+            },
+            {
+                "type": "lldb",
+                "request": "launch",
+                "name": "Debug demo",
+                "program": "${workspaceFolder:demo}/.build/debug/demo",
+                "args": [],
+                "cwd": "${workspaceFolder:demo}",
+                "preLaunchTask": "swift: Build Debug demo"
+            },
+            {
+                "type": "lldb",
+                "request": "launch",
+                "name": "Release demo",
+                "program": "${workspaceFolder:demo}/.build/release/demo",
+                "args": [],
+                "cwd": "${workspaceFolder:demo}",
+                "preLaunchTask": "swift: Build Release demo"
+            },
+            {
+                "type": "lldb",
+                "request": "launch",
+                "name": "Test demo",
+                "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+                "args": [
+                    ".build/debug/demoPackageTests.xctest"
+                ],
+                "cwd": "${workspaceFolder:demo}",
+                "preLaunchTask": "swift: Build All"
+            }
+        ]
+    
+    // "configurations": [
+    //     {
+    //         "type": "lldb",
+    //         "request": "launch",
+    //         "name": "Debug",
+    //         "program": "${workspaceFolder}/<your program>",
+    //         "args": [],
+    //         "cwd": "${workspaceFolder}"
+    //     }
+    // ]
+}

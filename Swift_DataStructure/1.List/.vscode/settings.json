@@ -1,0 +1,4 @@
+{
+    "sourcekit-lsp.serverPath": "/usr/bin/sourcekit-lsp",
+    "sourcekit-lsp.trace.server": "messages"
+}

@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EF71A25927D05E2000147A7E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71A25827D05E2000147A7E /* main.swift */; };
+		EFEF7E85280914E200F557E8 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEF7E84280914E200F557E8 /* List.swift */; };
+		EFEF7E86280914E200F557E8 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEF7E84280914E200F557E8 /* List.swift */; };
+		EFF0CEEC27D0CE950056372D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0CEEB27D0CE950056372D /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EF71A25327D05E2000147A7E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EFF0CEE727D0CE950056372D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +37,20 @@
 /* Begin PBXFileReference section */
 		EF71A25527D05E2000147A7E /* Swift_DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF71A25827D05E2000147A7E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EFEF7E84280914E200F557E8 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		EFF0CEE927D0CE950056372D /* 1.List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 1.List; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF0CEEB27D0CE950056372D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF71A25227D05E2000147A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF0CEE627D0CE950056372D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				EF71A25527D05E2000147A7E /* Swift_DataStructure */,
+				EFF0CEE927D0CE950056372D /* 1.List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +81,26 @@
 			isa = PBXGroup;
 			children = (
 				EF71A25827D05E2000147A7E /* main.swift */,
+				EFF0CEEA27D0CE950056372D /* 1.List */,
 			);
 			path = Swift_DataStructure;
+			sourceTree = "<group>";
+		};
+		EFEF7E8728092B0200F557E8 /* 1.LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				EFF0CEEB27D0CE950056372D /* main.swift */,
+				EFEF7E84280914E200F557E8 /* List.swift */,
+			);
+			path = 1.LinkedList;
+			sourceTree = "<group>";
+		};
+		EFF0CEEA27D0CE950056372D /* 1.List */ = {
+			isa = PBXGroup;
+			children = (
+				EFEF7E8728092B0200F557E8 /* 1.LinkedList */,
+			);
+			path = 1.List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +123,23 @@
 			productReference = EF71A25527D05E2000147A7E /* Swift_DataStructure */;
 			productType = "com.apple.product-type.tool";
 		};
+		EFF0CEE827D0CE950056372D /* 1.List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF0CEED27D0CE950056372D /* Build configuration list for PBXNativeTarget "1.List" */;
+			buildPhases = (
+				EFF0CEE527D0CE950056372D /* Sources */,
+				EFF0CEE627D0CE950056372D /* Frameworks */,
+				EFF0CEE727D0CE950056372D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 1.List;
+			productName = 1.List;
+			productReference = EFF0CEE927D0CE950056372D /* 1.List */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +151,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					EF71A25427D05E2000147A7E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EFF0CEE827D0CE950056372D = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -111,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				EF71A25427D05E2000147A7E /* Swift_DataStructure */,
+				EFF0CEE827D0CE950056372D /* 1.List */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +183,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF71A25927D05E2000147A7E /* main.swift in Sources */,
+				EFEF7E85280914E200F557E8 /* List.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF0CEE527D0CE950056372D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF0CEEC27D0CE950056372D /* main.swift in Sources */,
+				EFEF7E86280914E200F557E8 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +336,28 @@
 			};
 			name = Release;
 		};
+		EFF0CEEE27D0CE950056372D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SP5B27EKS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EFF0CEEF27D0CE950056372D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SP5B27EKS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +375,15 @@
 			buildConfigurations = (
 				EF71A25D27D05E2000147A7E /* Debug */,
 				EF71A25E27D05E2000147A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF0CEED27D0CE950056372D /* Build configuration list for PBXNativeTarget "1.List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF0CEEE27D0CE950056372D /* Debug */,
+				EFF0CEEF27D0CE950056372D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
