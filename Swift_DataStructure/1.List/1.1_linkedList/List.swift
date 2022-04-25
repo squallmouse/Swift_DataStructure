@@ -12,18 +12,19 @@ class ListNode<T:Comparable>{
     var value : T
     var nextNode : ListNode?
     
-    init(value : T , nextNode : ListNode? = nil) {
+    init(value : T  , nextNode : ListNode? = nil) {
         self.value = value
         self.nextNode = nextNode
     }
     
     deinit {
-        print("deinit -- value:\(self.value)")
+        print("deinit -- value:\(self.value  )")
     }
 }
 
 
 /// 链表元素从 0 开始
+/// 头结点的 next 指向0号元素
 class LinkedList<T:Comparable>{
     var count : Int
     var headNode : ListNode<T>?
@@ -31,9 +32,10 @@ class LinkedList<T:Comparable>{
     
     /// 链表初始化
     /// - Parameter headNode: 第一个节点
-    init(headNode:ListNode<T>? = nil) {
+    init(firstNode:ListNode<T>? = nil) {
         self.count = 0
-        self.headNode = headNode
+        self.headNode = ListNode<T>.init(value: 0 as! T)
+        self.headNode?.nextNode = firstNode
     }
     
     
@@ -49,7 +51,7 @@ class LinkedList<T:Comparable>{
     /// - Returns: 没找到返回 -1
     func indexOf(value : T) -> Int {
         var index = -1;
-        var tempNode = self.headNode ?? nil
+        var tempNode = self.headNode?.nextNode ?? nil
         while let temp = tempNode {
             index += 1
             if temp.value == value {
@@ -57,6 +59,7 @@ class LinkedList<T:Comparable>{
             }
             tempNode = temp.nextNode
         }
+        print("没有要寻找的元素")
         return -1
     }
     
@@ -88,13 +91,13 @@ class LinkedList<T:Comparable>{
             assert(index < self.count)
             return false
         }
-        var preNode:ListNode<T>? = self.headNode // 前一个node
+        var preNode:ListNode<T>? = self.headNode?.nextNode // 前一个node
         var nextNode:ListNode<T>? = nil // 后一个node
         let node = ListNode.init(value: value)
         if (index == 0) {
             nextNode = preNode
             node.nextNode = nextNode
-            self.headNode = node
+            self.headNode?.nextNode = node
         }else{
 //            for _ in 0..<index {
 //                preNode = preNode!.nextNode
@@ -118,7 +121,7 @@ class LinkedList<T:Comparable>{
             assert(index > self.count)
             return nil
         }
-        var resNode = self.headNode
+        var resNode = self.headNode?.nextNode
         for _ in 0..<index {
             resNode = resNode?.nextNode
         }
@@ -131,7 +134,7 @@ class LinkedList<T:Comparable>{
     func append(value:T) {
         let node = ListNode.init(value: value)
         if (self.count == 0) {
-            self.headNode = node
+            self.headNode?.nextNode = node
         }else{
             let lastNode = self.indexOfNode(index: self.count-1)
             lastNode?.nextNode = node
@@ -152,7 +155,7 @@ class LinkedList<T:Comparable>{
     /// 返回index处的值
     /// - Parameter index: 第几个
     /// - Returns: 值
-    func getValueOfIndex(index:Int) -> T {
+    func getValueOfIndex(index:Int) -> T? {
         let res = self.indexOfNode(index: index)!.value
         return res
     }
@@ -187,11 +190,11 @@ class LinkedList<T:Comparable>{
     
     /// 打印所有的元素值
     func printAllValue()  {
-        var tempNode = self.headNode
+        var tempNode = self.headNode?.nextNode
         var count = -1
         while let temp = tempNode {
             count += 1
-            print("\(count) : value = \(temp.value)")
+            print("\(count) : value = \(temp.value )")
             tempNode = tempNode?.nextNode
         }
     }
