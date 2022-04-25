@@ -8,7 +8,7 @@
 import Foundation
 
 
-class YHStack<T>{
+class YHStack<T:Comparable>{
     
     private var arr : Array<T>  = []
     private var currentPoint : Int // 指向栈顶
