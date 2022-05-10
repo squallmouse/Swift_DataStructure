@@ -8,7 +8,7 @@
 import Foundation
 
 
-class ListNode<T:Comparable>{
+class ListNode<T>{
     var value : T
     var nextNode : ListNode?
     

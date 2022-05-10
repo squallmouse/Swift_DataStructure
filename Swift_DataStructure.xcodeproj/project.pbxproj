@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0EEDBF282518C600657A59 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDBE282518C600657A59 /* main.swift */; };
+		EF0EEDC52825197800657A59 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDC42825197800657A59 /* BinarySearchTree.swift */; };
+		EF0EEDC62825197800657A59 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDC42825197800657A59 /* BinarySearchTree.swift */; };
 		EF71A25927D05E2000147A7E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71A25827D05E2000147A7E /* main.swift */; };
 		EFCCD5592816456F00F8090A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD5582816456F00F8090A /* main.swift */; };
 		EFCCD55D2816457B00F8090A /* TwoWayLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63539428122F6D00C1524B /* TwoWayLinkedList.swift */; };
@@ -22,11 +25,30 @@
 		EFCCD59B2816898F00F8090A /* TwoWayLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63539428122F6D00C1524B /* TwoWayLinkedList.swift */; };
 		EFCCD59D281696AD00F8090A /* DeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD59C281696AD00F8090A /* DeQueue.swift */; };
 		EFCCD59E281696AD00F8090A /* DeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD59C281696AD00F8090A /* DeQueue.swift */; };
+		EFE94647282A0ED200CBD6D1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE94646282A0ED200CBD6D1 /* Person.swift */; };
+		EFE94648282A0ED200CBD6D1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE94646282A0ED200CBD6D1 /* Person.swift */; };
+		EFE9464A282A0EEE00CBD6D1 /* ICompareable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE94649282A0EEE00CBD6D1 /* ICompareable.swift */; };
+		EFE9464B282A0EEE00CBD6D1 /* ICompareable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE94649282A0EEE00CBD6D1 /* ICompareable.swift */; };
+		EFE9464D282A1B8F00CBD6D1 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9464C282A1B8F00CBD6D1 /* Student.swift */; };
+		EFE9464E282A1B8F00CBD6D1 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9464C282A1B8F00CBD6D1 /* Student.swift */; };
+		EFE94656282A52FD00CBD6D1 /* TestBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE94655282A52FD00CBD6D1 /* TestBinarySearchTree.swift */; };
+		EFE9465B282A589E00CBD6D1 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDC42825197800657A59 /* BinarySearchTree.swift */; };
+		EFE9465F282A68DD00CBD6D1 /* YHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD58A281681EA00F8090A /* YHStack.swift */; };
+		EFE94660282A6FAE00CBD6D1 /* YHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD58A281681EA00F8090A /* YHStack.swift */; };
 		EFEF7E86280914E200F557E8 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEF7E84280914E200F557E8 /* List.swift */; };
 		EFF0CEEC27D0CE950056372D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0CEEB27D0CE950056372D /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EF0EEDBA282518C600657A59 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		EF71A25327D05E2000147A7E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +97,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF0EEDBC282518C600657A59 /* BinarySearchTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearchTree; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0EEDBE282518C600657A59 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EF0EEDC42825197800657A59 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		EF63539428122F6D00C1524B /* TwoWayLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWayLinkedList.swift; sourceTree = "<group>"; };
 		EF71A25527D05E2000147A7E /* Swift_DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF71A25827D05E2000147A7E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -90,12 +115,24 @@
 		EFCCD5932816887500F8090A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EFCCD5982816894D00F8090A /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		EFCCD59C281696AD00F8090A /* DeQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeQueue.swift; sourceTree = "<group>"; };
+		EFE94646282A0ED200CBD6D1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EFE94649282A0EEE00CBD6D1 /* ICompareable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICompareable.swift; sourceTree = "<group>"; };
+		EFE9464C282A1B8F00CBD6D1 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		EFE94653282A52FD00CBD6D1 /* TestBinarySearchTree.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBinarySearchTree.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE94655282A52FD00CBD6D1 /* TestBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinarySearchTree.swift; sourceTree = "<group>"; };
 		EFEF7E84280914E200F557E8 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		EFF0CEE927D0CE950056372D /* 1.List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 1.List; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF0CEEB27D0CE950056372D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EF0EEDB9282518C600657A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF71A25227D05E2000147A7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFE94650282A52FD00CBD6D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFF0CEE627D0CE950056372D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +186,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0EEDB72825188800657A59 /* 4.Tree */ = {
+			isa = PBXGroup;
+			children = (
+				EF0EEDBD282518C600657A59 /* 4.1 BinarySearchTree */,
+			);
+			path = 4.Tree;
+			sourceTree = "<group>";
+		};
+		EF0EEDBD282518C600657A59 /* 4.1 BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				EFE9465C282A606700CBD6D1 /* Other */,
+				EFE94654282A52FD00CBD6D1 /* TestBinarySearchTree */,
+				EF0EEDC42825197800657A59 /* BinarySearchTree.swift */,
+				EF0EEDBE282518C600657A59 /* main.swift */,
+			);
+			path = "4.1 BinarySearchTree";
+			sourceTree = "<group>";
+		};
 		EF71A24C27D05E2000147A7E = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +224,8 @@
 				EFCCD574281654A000F8090A /* TestTwoWayList.xctest */,
 				EFCCD583281681C400F8090A /* 2.Stack */,
 				EFCCD5912816887500F8090A /* 3.Queue */,
+				EF0EEDBC282518C600657A59 /* BinarySearchTree */,
+				EFE94653282A52FD00CBD6D1 /* TestBinarySearchTree.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +233,7 @@
 		EF71A25727D05E2000147A7E /* Swift_DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				EF0EEDB72825188800657A59 /* 4.Tree */,
 				EFCCD5922816887500F8090A /* 3.Queue */,
 				EFCCD584281681C400F8090A /* 2.Stack */,
 				EFF0CEEA27D0CE950056372D /* 1.List */,
@@ -229,6 +295,24 @@
 			path = 3.Queue;
 			sourceTree = "<group>";
 		};
+		EFE94654282A52FD00CBD6D1 /* TestBinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				EFE94655282A52FD00CBD6D1 /* TestBinarySearchTree.swift */,
+			);
+			path = TestBinarySearchTree;
+			sourceTree = "<group>";
+		};
+		EFE9465C282A606700CBD6D1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EFE94649282A0EEE00CBD6D1 /* ICompareable.swift */,
+				EFE94646282A0ED200CBD6D1 /* Person.swift */,
+				EFE9464C282A1B8F00CBD6D1 /* Student.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		EFF0CEEA27D0CE950056372D /* 1.List */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +325,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EF0EEDBB282518C600657A59 /* BinarySearchTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF0EEDC0282518C600657A59 /* Build configuration list for PBXNativeTarget "BinarySearchTree" */;
+			buildPhases = (
+				EF0EEDB8282518C600657A59 /* Sources */,
+				EF0EEDB9282518C600657A59 /* Frameworks */,
+				EF0EEDBA282518C600657A59 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinarySearchTree;
+			productName = BinarySearchTree;
+			productReference = EF0EEDBC282518C600657A59 /* BinarySearchTree */;
+			productType = "com.apple.product-type.tool";
+		};
 		EF71A25427D05E2000147A7E /* Swift_DataStructure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF71A25C27D05E2000147A7E /* Build configuration list for PBXNativeTarget "Swift_DataStructure" */;
@@ -326,6 +427,23 @@
 			productReference = EFCCD5912816887500F8090A /* 3.Queue */;
 			productType = "com.apple.product-type.tool";
 		};
+		EFE94652282A52FD00CBD6D1 /* TestBinarySearchTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE94657282A52FD00CBD6D1 /* Build configuration list for PBXNativeTarget "TestBinarySearchTree" */;
+			buildPhases = (
+				EFE9464F282A52FD00CBD6D1 /* Sources */,
+				EFE94650282A52FD00CBD6D1 /* Frameworks */,
+				EFE94651282A52FD00CBD6D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBinarySearchTree;
+			productName = TestBinarySearchTree;
+			productReference = EFE94653282A52FD00CBD6D1 /* TestBinarySearchTree.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EFF0CEE827D0CE950056372D /* 1.List */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFF0CEED27D0CE950056372D /* Build configuration list for PBXNativeTarget "1.List" */;
@@ -353,6 +471,9 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					EF0EEDBB282518C600657A59 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 					EF71A25427D05E2000147A7E = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -366,6 +487,9 @@
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					EFCCD5902816887500F8090A = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					EFE94652282A52FD00CBD6D1 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					EFF0CEE827D0CE950056372D = {
@@ -392,6 +516,8 @@
 				EFCCD573281654A000F8090A /* TestTwoWayList */,
 				EFCCD582281681C400F8090A /* 2.Stack */,
 				EFCCD5902816887500F8090A /* 3.Queue */,
+				EF0EEDBB282518C600657A59 /* BinarySearchTree */,
+				EFE94652282A52FD00CBD6D1 /* TestBinarySearchTree */,
 			);
 		};
 /* End PBXProject section */
@@ -404,17 +530,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFE94651282A52FD00CBD6D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF0EEDB8282518C600657A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE94648282A0ED200CBD6D1 /* Person.swift in Sources */,
+				EFE9464B282A0EEE00CBD6D1 /* ICompareable.swift in Sources */,
+				EF0EEDC62825197800657A59 /* BinarySearchTree.swift in Sources */,
+				EFE9464E282A1B8F00CBD6D1 /* Student.swift in Sources */,
+				EF0EEDBF282518C600657A59 /* main.swift in Sources */,
+				EFE9465F282A68DD00CBD6D1 /* YHStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF71A25127D05E2000147A7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE94647282A0ED200CBD6D1 /* Person.swift in Sources */,
 				EF71A25927D05E2000147A7E /* main.swift in Sources */,
 				EFCCD5992816894D00F8090A /* Queue.swift in Sources */,
 				EFCCD59D281696AD00F8090A /* DeQueue.swift in Sources */,
 				EFCCD58B281681EA00F8090A /* YHStack.swift in Sources */,
+				EFE9464A282A0EEE00CBD6D1 /* ICompareable.swift in Sources */,
+				EF0EEDC52825197800657A59 /* BinarySearchTree.swift in Sources */,
+				EFE9464D282A1B8F00CBD6D1 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +606,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFE9464F282A52FD00CBD6D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE9465B282A589E00CBD6D1 /* BinarySearchTree.swift in Sources */,
+				EFE94656282A52FD00CBD6D1 /* TestBinarySearchTree.swift in Sources */,
+				EFE94660282A6FAE00CBD6D1 /* YHStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFF0CEE527D0CE950056372D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +628,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		EF0EEDC1282518C600657A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SP5B27EKS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EF0EEDC2282518C600657A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SP5B27EKS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		EF71A25A27D05E2000147A7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -709,6 +893,38 @@
 			};
 			name = Release;
 		};
+		EFE94658282A52FD00CBD6D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5SP5B27EKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanhao.TestBinarySearchTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EFE94659282A52FD00CBD6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5SP5B27EKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanhao.TestBinarySearchTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		EFF0CEEE27D0CE950056372D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -734,6 +950,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF0EEDC0282518C600657A59 /* Build configuration list for PBXNativeTarget "BinarySearchTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0EEDC1282518C600657A59 /* Debug */,
+				EF0EEDC2282518C600657A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EF71A25027D05E2000147A7E /* Build configuration list for PBXProject "Swift_DataStructure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -784,6 +1009,15 @@
 			buildConfigurations = (
 				EFCCD5962816887500F8090A /* Debug */,
 				EFCCD5972816887500F8090A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE94657282A52FD00CBD6D1 /* Build configuration list for PBXNativeTarget "TestBinarySearchTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE94658282A52FD00CBD6D1 /* Debug */,
+				EFE94659282A52FD00CBD6D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

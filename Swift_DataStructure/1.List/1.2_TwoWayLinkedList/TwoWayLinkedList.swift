@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TWNode<T:Comparable> {
+class TWNode<T> {
     var value : T
     var prevNode : TWNode?
     var nextNode : TWNode?

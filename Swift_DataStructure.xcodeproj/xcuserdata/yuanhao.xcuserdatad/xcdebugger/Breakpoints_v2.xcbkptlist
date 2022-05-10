@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FB852568-320B-479F-B5F6-A7522E2E6F8B"
-            shouldBeEnabled = "Yes"
+            uuid = "A3244E39-2AC9-4444-A157-6E868720B42A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Swift_DataStructure/1.List/1.2_TwoWayLinkedList/TestTwoWayList/TestTwoWayList.swift"
+            filePath = "Swift_DataStructure/4.Tree/4.1 BinarySearchTree/BinarySearchTree.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "testClear()"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "preorderTraversalNormal()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

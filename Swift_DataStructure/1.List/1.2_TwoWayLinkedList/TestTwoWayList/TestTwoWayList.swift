@@ -67,7 +67,7 @@ class TestTwoWayList: XCTestCase {
     }
     
     func testInsertNodeAt0()  {
-        var size = list.count
+        let size = list.count
         list.insertNodeAt(index: 0, value: -1)
         XCTAssert(size+1 == list.count)
         XCTAssert(list.getValueAt(index: 0) == -1)
