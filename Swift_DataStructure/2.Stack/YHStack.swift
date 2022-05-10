@@ -8,7 +8,7 @@
 import Foundation
 
 
-class YHStack<T:Comparable>{
+class YHStack<T>{
     
     private var arr : Array<T>  = []
     private var currentPoint : Int // 指向栈顶
@@ -18,12 +18,17 @@ class YHStack<T:Comparable>{
     }
     
     func isEmpty() -> Bool {
-        return self.arr.count == -1
+        return self.currentPoint == -1
     }
     
     func push(value:T)  {
-        self.arr.append(value)
         currentPoint += 1
+        if self.arr.count >= currentPoint+1 {
+            self.arr[currentPoint] = value
+        }else{
+            self.arr.append(value)
+        }
+        
     }
     
     func pop() -> T {
