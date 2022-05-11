@@ -10,6 +10,8 @@
 		EF0EEDBF282518C600657A59 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDBE282518C600657A59 /* main.swift */; };
 		EF0EEDC52825197800657A59 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDC42825197800657A59 /* BinarySearchTree.swift */; };
 		EF0EEDC62825197800657A59 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EEDC42825197800657A59 /* BinarySearchTree.swift */; };
+		EF556B3E282B73B60027EDEF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD5982816894D00F8090A /* Queue.swift */; };
+		EF556B3F282B74640027EDEF /* TwoWayLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63539428122F6D00C1524B /* TwoWayLinkedList.swift */; };
 		EF71A25927D05E2000147A7E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71A25827D05E2000147A7E /* main.swift */; };
 		EFCCD5592816456F00F8090A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD5582816456F00F8090A /* main.swift */; };
 		EFCCD55D2816457B00F8090A /* TwoWayLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63539428122F6D00C1524B /* TwoWayLinkedList.swift */; };
@@ -545,11 +547,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE94648282A0ED200CBD6D1 /* Person.swift in Sources */,
+				EF556B3E282B73B60027EDEF /* Queue.swift in Sources */,
 				EFE9464B282A0EEE00CBD6D1 /* ICompareable.swift in Sources */,
 				EF0EEDC62825197800657A59 /* BinarySearchTree.swift in Sources */,
 				EFE9464E282A1B8F00CBD6D1 /* Student.swift in Sources */,
 				EF0EEDBF282518C600657A59 /* main.swift in Sources */,
 				EFE9465F282A68DD00CBD6D1 /* YHStack.swift in Sources */,
+				EF556B3F282B74640027EDEF /* TwoWayLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

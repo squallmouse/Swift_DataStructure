@@ -149,9 +149,16 @@ extension BinarySearchTree{
 
 // MARK: -  二叉搜索树的遍历方法
 extension BinarySearchTree {
+    enum Traversal {
+        case preeorder /// 前序遍历
+        case inorder /// 中序遍历
+        case postorder /// 后序遍历
+        case levelOrder /// 层序遍历
+    }
     
     
-    /// 前序遍历
+    
+/// 前序遍历
     func preorderTraversal() {
         self.bstArr.removeAll()
         if self.rootNode == nil {
@@ -159,8 +166,9 @@ extension BinarySearchTree {
             return
         }
         self.preorderTraversal2(node: self.rootNode)
-        
     }
+    
+    //
     func preorderTraversal2(node:TreeNode<T>?) {
         if (node == nil){
             return
@@ -197,19 +205,146 @@ extension BinarySearchTree {
         
     }
     
-    /// 中序遍历
+/// 中序遍历
     func inorderTraversal()  {
-        print("123")
+        self.bstArr.removeAll()
+        if self.rootNode == nil {
+            print("这是一个空的  BinarySearchTree ")
+            return
+        }
+        inorderTraversal2(node: self.rootNode)
+            
     }
     
-    /// 后续遍历
+    func inorderTraversal2(node:TreeNode<T>?) -> Void {
+        if node == nil {
+            return
+        }
+        inorderTraversal2(node: node?.left)
+        print(node!.value)
+        self.bstArr.append(node!.value)
+        inorderTraversal2(node: node?.right)
+    }
+    //中须遍历  非递归
+    func inorderTraversalNormal(){
+        self.bstArr.removeAll()
+        if self.rootNode == nil {
+            print("这是一个空的  BinarySearchTree ")
+            return
+        }
+
+        let stack = YHStack<TreeNode<T>>.init()
+        var node : TreeNode<T>? = self.rootNode
+
+        stack.push(value: node!)
+
+        while (!stack.isEmpty()) {
+            if (node == nil) {
+                node = stack.pop()
+                print(node!.value)
+                self.bstArr.append(node!.value)
+                node = node?.right // ***
+            }else{
+                if (node!.left != nil) {
+                    stack.push(value: node!.left!)
+                }
+            }
+        }
+        
+    }
+    
+    
+/// 后续遍历
     func postorderTraversal()  {
-        
+        self.bstArr.removeAll()
+        if self.rootNode == nil {
+            print("这是一个空的  BinarySearchTree ")
+            return
+        }
+        postorderTraversal2(node: self.rootNode)
     }
     
-    /// 层序遍历
-    func levelOrderTraversal()  {
+    func postorderTraversal2(node:TreeNode<T>?)  {
+        if  node == nil {
+            return
+        }
+        postorderTraversal2(node: node?.left)
+        postorderTraversal2(node: node?.right)
+        print("\(node!.value)")
+        self.bstArr.append(node!.value)
+    }
+    
+    // 后序遍历非递归
+    func postorderTraversalNormal(){
+        self.bstArr.removeAll()
+        if self.rootNode == nil {
+            print("这是一个空的  BinarySearchTree ")
+            return
+        }
+        // 如果栈顶节点是叶子节点
+        //或上一次访问的是栈顶节点的子节点 pop
+        let stack = YHStack<TreeNode<T>>.init()
+        var node:TreeNode<T>? = self.rootNode!
+        var topNode : TreeNode<T>?
+        var preTopNode : TreeNode<T>? // 上一次的节点
+        stack.push(value: node!)
         
+        while (!stack.isEmpty()) {
+            topNode = stack.pop()
+            if (topNode?.left == nil &&
+                topNode?.right == nil) {
+                // 说明栈顶元素是叶子节点
+                preTopNode = topNode
+                print(topNode!.value)
+                self.bstArr.append(topNode!.value)
+            }else if (preTopNode?.parent === topNode){
+                // 上一次是叶子节点
+                preTopNode = topNode
+                print(topNode!.value)
+                self.bstArr.append(topNode!.value)
+                
+            }else{
+                node = topNode!
+                stack.push(value: node!)
+                if node?.right != nil {
+                    stack.push(value: node!.right!)
+                }
+                if node?.left != nil {
+                    stack.push(value: node!.left!)
+                }
+                
+            }
+            
+        }
+    }
+    
+/// 层序遍历
+    func levelOrderTraversal()  {
+        self.bstArr.removeAll()
+        if self.rootNode == nil {
+            print("这是一个空的  BinarySearchTree ")
+            return
+        }
+        
+//        let queue = Queue<TreeNode<T>>.init()
+        //队列
+        var queue = Array<TreeNode<T>>.init()
+        var node : TreeNode<T>? = self.rootNode
+        queue.append(node!)
+        
+        while (queue.count != 0) {
+            node = queue[0]
+            print(node!.value)
+            self.bstArr.append(node!.value)
+            if (node?.left != nil) {
+                queue.append(node!.left!)
+            }
+            if (node!.right != nil) {
+                queue.append(node!.right!)
+            }
+            queue.remove(at: 0)
+            
+        }
     }
     
     

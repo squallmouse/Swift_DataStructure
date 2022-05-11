@@ -54,6 +54,7 @@ class YHStack<T>{
         }
     }
     
+    
     func printAll()  {
         if currentPoint == -1 {
             print("空空")
