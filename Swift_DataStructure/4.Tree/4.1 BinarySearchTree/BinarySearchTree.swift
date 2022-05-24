@@ -18,7 +18,7 @@ protocol BTCompare {
     /// - Returns: <0 , 1<2 ; =0 , 1=2; >0,1>2;
     func compareTwoVal<E:Comparable>(val1 :E , val2 :E) -> Int;
 }
- 
+ // 树的节点
 class TreeNode<T:Comparable>{
     var value : T
     var left : TreeNode?
@@ -87,6 +87,20 @@ extension BinarySearchTree{
     /// 清空所有元素
     func clear()  {
         
+    }
+    /// 判断是不是叶子节点
+    func isLeaf(node:TreeNode<T>?) -> Bool {
+        if (node == nil) {
+            return false
+        }
+        return node!.left == nil && node!.right == nil
+    }
+    /// 判断是否有左右两个子节点
+    func hasTwoChildren(node:TreeNode<T>?) -> Bool {
+        if (node == nil) {
+            return false
+        }
+        return node!.left != nil && node!.right != nil
     }
     
     /// 添加元素 , 如果是已有的元素就覆盖
@@ -157,7 +171,7 @@ extension BinarySearchTree {
     }
     
     
-    
+    // MARK: -  前序遍历
 /// 前序遍历
     func preorderTraversal() {
         self.bstArr.removeAll()
@@ -165,7 +179,8 @@ extension BinarySearchTree {
             print("这是一个空的  BinarySearchTree ")
             return
         }
-        self.preorderTraversal2(node: self.rootNode)
+//        self.preorderTraversal2(node: self.rootNode)
+        self.toString(node: self.rootNode, str: "", preStr: "")
     }
     
     //
@@ -178,6 +193,18 @@ extension BinarySearchTree {
         self.bstArr.append(node!.value)
         preorderTraversal2(node: node?.left)
         preorderTraversal2(node: node?.right)
+    }
+    //打印
+    func toString(node:TreeNode<T>? , str:String , preStr : String){
+        if (node == nil) {
+                return
+        }
+        let tempStr = "\(str)" + "\(preStr)"
+        print("\(tempStr)" + "\(node!.value)")
+        self.bstArr.append(node!.value)
+        toString(node: node!.left, str: tempStr, preStr: "[L] ")
+        toString(node: node!.right, str: tempStr, preStr: "[R] ")
+        
     }
     
     // 前序遍历 非递归
@@ -204,7 +231,7 @@ extension BinarySearchTree {
         }
         
     }
-    
+    // MARK: -  中序遍历
 /// 中序遍历
     func inorderTraversal()  {
         self.bstArr.removeAll()
@@ -253,7 +280,7 @@ extension BinarySearchTree {
         
     }
     
-    
+ // MARK: -  后序遍历
 /// 后续遍历
     func postorderTraversal()  {
         self.bstArr.removeAll()
@@ -317,7 +344,7 @@ extension BinarySearchTree {
             
         }
     }
-    
+// MARK: -  层序遍历
 /// 层序遍历
     func levelOrderTraversal()  {
         self.bstArr.removeAll()
@@ -336,6 +363,7 @@ extension BinarySearchTree {
             node = queue[0]
             print(node!.value)
             self.bstArr.append(node!.value)
+            
             if (node?.left != nil) {
                 queue.append(node!.left!)
             }
@@ -347,5 +375,86 @@ extension BinarySearchTree {
         }
     }
     
+// MARK: -  节点的高度
+    // 递归计算高度
+    func height(node:TreeNode<T>?) -> Int {
+        if (node == nil) {
+            return 0
+        }
+        return 1 + max(height(node: node!.left), height(node: node!.right))
+    }
     
+    //非递归计算高度
+    func heightNormal(node : TreeNode<T>?) -> Int {
+        if (node == nil) {
+            return 0
+        }
+        var height = 0 // 高度
+        var levelSize = 0 // 每一层的元素个数
+        //队列
+        var queue = Array<TreeNode<T>>.init()
+        var node : TreeNode<T>? = self.rootNode
+        queue.append(node!)
+        levelSize += 1
+        
+        while (queue.count != 0) {
+            node = queue[0]
+            levelSize -= 1
+            if (node?.left != nil) {
+                queue.append(node!.left!)
+            }
+            if (node!.right != nil) {
+                queue.append(node!.right!)
+            }
+            queue.remove(at: 0)
+            
+            if (levelSize == 0) {
+                height += 1
+                levelSize = queue.count
+            }
+            
+           
+        }
+        return height
+    }
+    
+    // MARK: -  判断是不是完全二叉树
+    /// 判断是不是完全二叉树
+    func isComplete() -> Bool {
+        if (self.rootNode == nil) {
+            return false
+        }
+        
+        var queue = Array<TreeNode<T>>.init()
+        var node:TreeNode<T>! = self.rootNode!
+        var isLeafNode = false
+        queue.append(node)
+        
+        while(queue.count != 0){
+            node = queue.remove(at: 0)
+            
+            if (isLeafNode && !self.isLeaf(node: node)) {
+               return false
+            }
+            
+            
+            if (node.left != nil &&
+                node.right != nil )
+            {
+                queue.append(node.left!)
+                queue.append(node.right!)
+            }
+            else if ( node.left == nil &&
+                     node.right != nil)
+            {
+                return false
+            }
+            else
+            {
+                // 后面遍历的都是叶子节点
+                isLeafNode = true;
+            }
+        }
+        return true
+    }
 }

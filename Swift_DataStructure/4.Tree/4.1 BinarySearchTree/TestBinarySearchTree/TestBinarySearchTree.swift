@@ -115,5 +115,27 @@ class TestBinarySearchTree: XCTestCase {
         let resarr = [7,4,9,2,5,8,11,1,3,10,12]
         arrassert(arr: resarr)
     }
+    // 高度
+    func testHeight() {
+        let h = bst.height(node: bst.rootNode)
+        XCTAssert(h == 4)
+    }
+    
+    func testHeightNormal() {
+        let h = bst.heightNormal(node: bst.rootNode)
+        XCTAssert(h == 4)
+    }
+    
+    func testIsComplete() {
+        let arr2 = [7,4,2,1,3,5,9,8,11]
+        let bst2 = BinarySearchTree<Int>.init()
+        
+        for item in arr2 {
+            bst2.add(val: item)
+        }
+        
+        let res = bst2.isComplete()
+        XCTAssert(res == true)
+    }
 
 }

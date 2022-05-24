@@ -14,8 +14,8 @@
             filePath = "Swift_DataStructure/4.Tree/4.1 BinarySearchTree/BinarySearchTree.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "preorderTraversalNormal()"
             landmarkType = "7">
          </BreakpointContent>
